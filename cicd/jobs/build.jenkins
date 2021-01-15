@@ -1,6 +1,10 @@
 #!/usr/bin/env groovy
 
-pipelineJob('build-jenkins-operator') {
+folder(basePath) {
+    description 'Example Folder'
+}
+
+pipelineJob("$basePath/build-jenkins-operator") {
     displayName('Build jenkins-operator')
 
     logRotator {
