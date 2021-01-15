@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
+String basePath = 'example-path'
+
 folder(basePath) {
     description 'Example Folder'
 }
