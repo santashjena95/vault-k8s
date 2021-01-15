@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-pipelineJob('build-jenkins-operator') {
+pipelineJob('build-jenkins-operator/production') {
     displayName('Build jenkins-operator')
 
     logRotator {
