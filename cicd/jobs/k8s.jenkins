@@ -1,6 +1,12 @@
 #!/usr/bin/env groovy
 
-pipelineJob('example-path/k8s-e2e') {
+String basePath = 'example-path'
+
+folder(basePath) {
+    description 'Example Folder'
+}
+
+pipelineJob("$basePath/k8s-e2e") {
     displayName('Kubernetes Plugin E2E Test')
 
     logRotator {
